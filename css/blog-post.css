@@ -1,0 +1,16 @@
+.blog-img {
+    margin-top: 100px;
+    border-radius: 25px;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.image-avatar{
+    width: 300px;
+}
+@media screen and (width: 992px){
+    .blog-img{
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+.pop-blogs {
+    display: flex;
+    padding: 0 10px 0 0;
+}
+
+.blogs__item {
+    max-width: 405px;
+    margin-right: 50px;
+    padding-top: 50px;
+}
+
+.blogs__span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4C4C4C;
+}
+
+.blogs__h4 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #232536;
+    margin-top: 16px;
+}
+
+.margins {
+    margin: 5px 0 5px 0;
+}
+
+.blogs__img {
+    max-width: 100%;
+    min-height: 318px;
+    margin-bottom: 32px;
+}
+
+@media screen and (width:992px) {
+    .pop-blogs {
+        display: block;
+    }
+    .blogs__item {
+        max-width: 100%;
+    }
+}
