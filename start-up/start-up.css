@@ -95,12 +95,12 @@ body {
 }
 
 .button-active {
-    background-color: black;
-    color: white;
+    background-color: red;
+    color: blue;
 }
 
 .btnact {
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     border: transparent;
     margin-left: 5px;
@@ -108,10 +108,10 @@ body {
 }
 
 .btnact:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.0, 1.0);
 }
 
-.pagination-wrapper {
+.page-wrapper {
     margin: 0 auto;
     text-align: center;
 }

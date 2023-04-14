@@ -9,6 +9,15 @@
 .image-avatar{
     width: 300px;
 }
+form {
+    position: relative;
+}
+.delete {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    /* display: none; */
+}
 @media screen and (width: 992px){
     .blog-img{
         display: none;
