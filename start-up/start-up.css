@@ -100,11 +100,11 @@ body {
 }
 
 .btnact {
-    padding: 15px;
-    border-radius: 10px;
+    padding:25px;
+    border-radius: 50px;
     border: transparent;
     margin-left: 5px;
-    transition: .5s;
+    transition: .2s;
 }
 
 .btnact:hover {

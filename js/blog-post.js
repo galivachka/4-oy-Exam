@@ -15,7 +15,7 @@ fetch(url).then((response) => response.json()).then((data) => {
     let dataslice = data.data.slice(0, 1);
     console.log(data);
     let datamap = dataslice.map((user) => {
-        const { avatar, first_name, title,email,   } = user;
+        const { avatar, first_name, title,email,} = user;
         return `
         <div class="section-box">
         <div class="section-box-forimg">
@@ -80,28 +80,28 @@ form.addEventListener('submit', (e) => {
             </div>
             
             `
-            // box2.addEventListener('click',(e)=>{
-            //     if(e.target.classList.contains('box__btn')){
-            //         const id = e.target.dataset.id;
-            //         deleteUser(id).then(()=>{
-            //             const anyth = e.target.closest('div');
-            //             anyth.remove();
-            //         }) 
-            //     }
-            // })
-            // async function deleteUser (id){
-            //     try {
-            //         const response = await fetch`${url}/${id}`;
-            //         method:'Delete'
-            //         if(response.ok){
-            //             return response;
+            box2.addEventListener('click',(e)=>{
+                if(e.target.classList.contains('box__btn')){
+                    const id = e.target.dataset.id;
+                    deleteUser(id).then(()=>{
+                        const anyth = e.target.closest('div');
+                        anyth.remove();
+                    }) 
+                }
+            })
+            async function deleteUser (id){
+                try {
+                    const response = await fetch`${url}/${id}`;
+                    method:'Delete'
+                    if(response.ok){
+                        return response;
                         
-            //         } 
-            //     } catch (error) {
-            //         console.log(error)
-            //     }
-            // }
-            // box.appendChild(box2)
+                    } 
+                } catch (error) {
+                    console.log(error)
+                }
+            }
+            box.appendChild(box2)
         })
     }
     box.innerHTML = '';
@@ -110,15 +110,15 @@ form.addEventListener('submit', (e) => {
 })
 
 
-remove.addEventListener('submit', (e) => {
-   console.log(document.querySelector('.section-box').closest());
+// remove.addEventListener('submit', (e) => {
+//    console.log(document.querySelector('.section-box').closest());
 
-    fetch(url + "id", {
-    method: 'DELETE',
-    })
-    .then(res => res.json())
-    .then(res => console.log(res))
-})
+//     fetch(url + "id", {
+//     method: 'DELETE',
+//     })
+//     .then(res => res.json())
+//     .then(res => console.log(res))
+// })
 
 
 
